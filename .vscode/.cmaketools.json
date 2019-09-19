@@ -1,0 +1,192 @@
+{
+  "variant": {
+    "label": "Debug",
+    "keywordSettings": {
+      "buildType": "debug"
+    },
+    "description": "Emit debug information without performing optimizations"
+  },
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "/home/hector/code/Hellion/build",
+            "name": "QuickStart",
+            "sourceDirectory": "/home/hector/code/Hellion",
+            "targets": [
+              {
+                "artifacts": [
+                  "/home/hector/code/Hellion/build/libMulticastSenderLib.a"
+                ],
+                "buildDirectory": "/home/hector/code/Hellion/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g   -std=c++14",
+                    "includePath": [
+                      {
+                        "path": "/home/hector/code/Hellion/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/MulticastSender.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libMulticastSenderLib.a",
+                "linkerLanguage": "CXX",
+                "name": "MulticastSenderLib",
+                "sourceDirectory": "/home/hector/code/Hellion",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "/home/hector/code/Hellion/build/QuickStart"
+                ],
+                "buildDirectory": "/home/hector/code/Hellion/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g   -std=c++14",
+                    "includePath": [
+                      {
+                        "path": "/home/hector/code/Hellion/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/main.cpp",
+                      "src/Dog.cpp",
+                      "src/OpenFile.cpp",
+                      "src/Lab.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "QuickStart",
+                "linkLanguageFlags": "-g",
+                "linkLibraries": "libQuickStartLib.a libParametrosLib.a libMulticastSenderLib.a libMulticastReceiverLib.a -lpthread /usr/lib64/libboost_system.so",
+                "linkerLanguage": "CXX",
+                "name": "QuickStart",
+                "sourceDirectory": "/home/hector/code/Hellion",
+                "type": "EXECUTABLE"
+              },
+              {
+                "artifacts": [
+                  "/home/hector/code/Hellion/build/libMulticastReceiverLib.a"
+                ],
+                "buildDirectory": "/home/hector/code/Hellion/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g   -std=c++14",
+                    "includePath": [
+                      {
+                        "path": "/home/hector/code/Hellion/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/MulticastReceiver.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libMulticastReceiverLib.a",
+                "linkerLanguage": "CXX",
+                "name": "MulticastReceiverLib",
+                "sourceDirectory": "/home/hector/code/Hellion",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "/home/hector/code/Hellion/build/test/test_main"
+                ],
+                "buildDirectory": "/home/hector/code/Hellion/build/test",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g   -std=c++14",
+                    "includePath": [
+                      {
+                        "path": "/home/hector/code/Hellion/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "QuickStartTest.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "test_main",
+                "linkLanguageFlags": "-g",
+                "linkLibraries": "../libQuickStartLib.a /usr/lib64/libboost_unit_test_framework.so",
+                "linkerLanguage": "CXX",
+                "name": "test_main",
+                "sourceDirectory": "/home/hector/code/Hellion/test",
+                "type": "EXECUTABLE"
+              },
+              {
+                "artifacts": [
+                  "/home/hector/code/Hellion/build/libParametrosLib.a"
+                ],
+                "buildDirectory": "/home/hector/code/Hellion/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g   -std=c++14",
+                    "includePath": [
+                      {
+                        "path": "/home/hector/code/Hellion/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/Parametros.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libParametrosLib.a",
+                "linkerLanguage": "CXX",
+                "name": "ParametrosLib",
+                "sourceDirectory": "/home/hector/code/Hellion",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "/home/hector/code/Hellion/build/libQuickStartLib.a"
+                ],
+                "buildDirectory": "/home/hector/code/Hellion/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g   -std=c++14",
+                    "includePath": [
+                      {
+                        "path": "/home/hector/code/Hellion/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/QuickStart.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libQuickStartLib.a",
+                "linkerLanguage": "CXX",
+                "name": "QuickStartLib",
+                "sourceDirectory": "/home/hector/code/Hellion",
+                "type": "STATIC_LIBRARY"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.11413486481674284",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
+}
